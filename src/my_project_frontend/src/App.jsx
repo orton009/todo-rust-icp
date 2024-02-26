@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { my_project_backend } from 'declarations/my_project_backend';
+import ListTodos from "./ListTodos"
 
 function App() {
   const [greeting, setGreeting] = useState('');
@@ -24,6 +25,7 @@ function App() {
         <button type="submit">Click Me!</button>
       </form>
       <section id="greeting">{greeting}</section>
+      <ListTodos/>
     </main>
   );
 }

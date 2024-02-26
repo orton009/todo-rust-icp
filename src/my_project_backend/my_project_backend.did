@@ -1,3 +1,7 @@
 service : {
-    "greet": (text) -> (text) query;
+  get_all_todos : (nat64, nat64) -> (text);
+  get_todo_by_id : (text) -> (opt text);
+  create_todo : (text) -> (opt text);
+  update_todo : (text) -> (bool);
+  delete_todo : (text) -> (bool);
 }
